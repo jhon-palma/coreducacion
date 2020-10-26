@@ -1,0 +1,168 @@
+body{
+	background-color: rgba(241,90,41,0.9);
+}
+.contenedor{
+    position: relative;
+}
+
+.button-container{
+  /* display:inline-block; */
+  position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%;-50%);
+}
+
+.imageButtonss{
+	width: 50px;
+	height: 50px;
+	background: #69f129;
+	border-radius: 50%;
+	text-align: center;
+	/* line-height: 120px; */
+	animation: animate 2s linear infinite;
+	cursor: pointer;
+}
+
+.imageButtonss{
+    font-size: 1.2em;
+    line-height: 64px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgb(186, 212, 0.5);
+}
+
+@keyframes animate {
+	0% {
+	    -moz-transform: scale(0.9);
+	    -ms-transform: scale(0.9);
+	    -webkit-transform: scale(0.9);
+	    transform: scale(0.9);
+	}
+	70% {
+	    -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+	}
+	100% {
+	    -moz-transform: scale(0.9);
+	    -ms-transform: scale(0.9);
+	    -webkit-transform: scale(0.9);
+	    transform: scale(0.9);
+	    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+	}
+
+}
+.fa-chevron-circle-up{
+  text-shadow: 0 0 0 56px #272634;
+}
+
+
+@media screen and (min-width: 1080px){
+	.mainContent{
+		width:84%;
+		margin:auto;
+	}
+}
+@media screen and (min-width: 1900px) {
+	.imagen {
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+
+
+
+/* -------------------- BUTTON CONFIG ANIMATION -------------------- */
+
+.imageButtons{
+	width:2.5%;
+	position: absolute;
+	z-index: 1;
+}
+.imageButtons{
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+.imageButtons:hover{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    animation: none;
+    opacity: 0.9;
+}
+.imageButtons{
+	
+    font-size: 1.3em;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: -1px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background: rgb(241,90,41);
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgb(246, 121, 0.5);
+}
+
+.comercial{
+	top:26%;
+	left:42%;
+	animation: pulse 3.5s infinite;
+}
+
+.muestraEmpresarial{
+	top:30%;
+	left:17%;
+	animation: pulse 3.5s infinite;
+}
+
+.encuesta{
+	top:80%;
+	left:90%;
+	animation: pulse 3.5s infinite;
+}
+/* ANIMATED BUTTON */
+@keyframes pulse{
+	0% {
+	    -moz-transform: scale(0.9);
+	    -ms-transform: scale(0.9);
+	    -webkit-transform: scale(0.9);
+	    transform: scale(0.9);
+	}
+	70% {
+	    -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	    box-shadow: 0 0 0 50px rgba(241,90,41, 0);
+	}
+	100% {
+	    -moz-transform: scale(0.9);
+	    -ms-transform: scale(0.9);
+	    -webkit-transform: scale(0.9);
+	    transform: scale(0.9);
+	    box-shadow: 0 0 0 0 rgba(241,90,41, 0);
+	}
+}
+@keyframes visibilty {
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}

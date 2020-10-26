@@ -1,0 +1,10 @@
+.outer-loader {
+      width: auto;
+      height: 100vh;
+      /*display: flex;*/
+      align-items: center;
+      justify-content: center;
+   /*   background-image: url('../media/expo/01-lobby.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;*/
+}
