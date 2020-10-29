@@ -20,7 +20,7 @@ body{
 	border-radius: 50%;
 	text-align: center;
 	/* line-height: 120px; */
-	animation: animate 2s linear infinite;
+	animation: infinite animate 0.1s;
 	cursor: pointer;
 }
 
@@ -101,7 +101,7 @@ body{
     opacity: 0.9;
 }
 .imageButtons{
-	
+
     font-size: 1.3em;
     font-weight: light;
     font-family: 'Trebuchet MS', sans-serif;
@@ -112,7 +112,7 @@ body{
     color: white;
     border: none;
     border-radius: 50%;
-    background: rgb(241,90,41);
+    background: white;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgb(246, 121, 0.5);
 }
@@ -120,19 +120,25 @@ body{
 .comercial{
 	top:26%;
 	left:42%;
-	animation: pulse 3.5s infinite;
+	animation: pulse 1.5s infinite;
+}
+
+.atras{
+	top:2%;
+	left:2%;
+	/* animation: pulse 1.5s infinite; */
 }
 
 .muestraEmpresarial{
-	top:30%;
-	left:17%;
-	animation: pulse 3.5s infinite;
+	top:60%;
+	left:65%;
+	animation: pulse 1.5s infinite;
 }
 
 .encuesta{
 	top:80%;
 	left:90%;
-	animation: pulse 3.5s infinite;
+	animation: pulse 1.5s infinite;
 }
 /* ANIMATED BUTTON */
 @keyframes pulse{

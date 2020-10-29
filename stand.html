@@ -23,7 +23,7 @@
   <div class="mainContent">
 
     <div class="contenedor">
-      <img class="imagen img-fluid" src="img/fondo.jpg" alt="" />
+      <img class="imagen img-fluid" src="img/stand.jpg" alt="" />
       <!-- <div class="button-container">
 
         <a href="https://www.youtube.com/playlist?list=PL_gdem4-H5wSi04PWF2iPoPGXyq3U2c4r" alt="Buy Tickets">
@@ -35,14 +35,21 @@
       </div> -->
 
       <span class="pulse-button">
-        <a href="stand.html" onclick="newActivity('Ingreso a Muestra Comercial')">
+        <div class="back" onclick="newActivity('Regreso a Lobby')">
+					<a href="index.html">
+						<img class="imageButtons atras" src="img/arrow-left.svg" data-toggle="tooltip" data-placement="right" title=""/>
+					</a>
+				</div>
+
+
+        <a href="#" onclick="newActivity('Ingreso a Muestra Comercial')">
 					<div class="loader loaderZona"></div>
 					<img class="imageButtons comercial" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
 				</a>
       </span>
 
       <span class="pulse-button">
-        <a href="stand.html" onclick="newActivity('Ingreso a Muestra Comercial')">
+        <a href="#" onclick="newActivity('Ingreso a Muestra Comercial')">
 					<div class="loader loaderZona"></div>
 					<img class="imageButtons muestraEmpresarial" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
           <!-- <div class="imageButtons muestraEmpresarial">
@@ -52,7 +59,7 @@
       </span>
 
       <span class="pulse-button">
-        <a href="stand.html" onclick="newActivity('Ingreso a Muestra Comercial')">
+        <a href="#" onclick="newActivity('Ingreso a Muestra Comercial')">
 					<div class="loader loaderZona"></div>
 					<img class="imageButtons encuesta" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
 				</a>
