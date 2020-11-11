@@ -199,8 +199,13 @@ html{
 }
 
 .magdalena{
-	top:20%;
+	top:10%;
 	left:20%;
+	animation: pulse 1.5s infinite;
+}
+.ecowater{
+	top:10%;
+	left:30%;
 	animation: pulse 1.5s infinite;
 }
 
