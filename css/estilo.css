@@ -186,6 +186,7 @@ html{
     box-shadow: 0 0 0 0 rgb(246, 121, 0.5);
 }
 
+/* Ubicacion de los botones de los stand */
 .comercial{
 	top:26%;
 	left:35%;
@@ -196,6 +197,13 @@ html{
 	left:10%;
 	animation: pulse 1.5s infinite;
 }
+
+.magdalena{
+	top:20%;
+	left:20%;
+	animation: pulse 1.5s infinite;
+}
+
 
 .imagens{
 	top:26%;

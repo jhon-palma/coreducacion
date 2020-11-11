@@ -3,11 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/bootstrap.min.css" >
-        <link rel="stylesheet" href="css/all.css">
-        <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/venobox.css" media="screen">
-        <link rel="stylesheet" href="css/palma.css" media="screen">
+        <link rel="stylesheet" href="../css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/venobox.css" media="screen">
+        <!-- <link rel="stylesheet" href="css/palma.css" media="screen"> -->
+        <style>
+            .html,body{
+                 /* Para que funcione correctamente en Smartphones y Tablets */
+                 height:100vh;
+            }
+
+            body {
+                background-image: url("../img/stand/Stand 2_Magadalena Extreme.jpg")!important;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+        </style>
         <title>CorEducación</title>
     </head>
     <body>
@@ -19,37 +34,37 @@
                     </div>
                 </div>
             </div>
-            <img src="img/orientacion.jpg" class="imgOrientation img-fluid" alt="gira tu dispositivo">
+            <img src="../img/orientacion.jpg" class="imgOrientation img-fluid" alt="gira tu dispositivo">
             <div class="contenedor" style="display: none;">
                 <span class="pulse-button">
                     <div class="back" onclick="newActivity('Regreso a Lobby')">
                         <a href="lobby.html">
-                            <img class="imageButtons atras" src="img/arrow-left.svg" data-toggle="tooltip" data-placement="right" title=""/>
+                            <img class="imageButtons atras" src="../img/arrow-left.svg" data-toggle="tooltip" data-placement="right" title=""/>
                         </a>
                     </div>
                 </span>
                 <span >
                     <div class="back" onclick="newActivity('Regreso a Lobby')">
                         <a href="index.html">
-                            <img class="home" src="img/home.svg" data-toggle="tooltip" data-placement="right" title=""/>
+                            <img class="home" src="../img/home.svg" data-toggle="tooltip" data-placement="right" title=""/>
                         </a>
                     </div>
                 </span>
                 <span class="pulse-button">
                     <a data-toggle="modal" data-target="#Modal1">
-                        <img class="imageButtons imagens" src="img/ingreso1.svg"/>
+                        <img class="imageButtons imagens" src="../img/ingreso1.svg"/>
                     </a>
                 </span>
                 <span class="pulse-button">
-                    <a class="venobox-video" data-vbtype="video" href="https://www.youtube.com/watch?v=uwh7spICJkk">
+                    <a class="venobox-video" data-vbtype="video" href="https://youtu.be/PcD2EjfhMQo">
                         <div class="loader loaderZona"></div>
-                        <img class="imageButtons video" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
+                        <img class="imageButtons video" src="../img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
                     </a>
                 </span>
-                <span class="pulse-button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                <span class="pulse-button">
                     <a data-toggle="modal" data-target="#Modal2">
                         <div class="loader loaderZona"></div>
-                        <img class="imageButtons encuesta" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
+                        <img class="imageButtons encuesta" src="../img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
                     </a>
                 </span>
             </div>
@@ -62,8 +77,8 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <!-- <embed src="media/Pabellon1/1. SAVON NATUREL/SAVON NATUREL Ficha financiera.pdf" width="100%" height="500" style="height: 85vh;"></embed> -->
-                        <object data="media/Pabellon1/1. SAVON NATUREL/SAVON NATUREL Ficha financiera.pdf" type="application/pdf" width="100%" height="600px">
-                            No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/1nElFB5QIH45QYJUh-dQl9Agvud-dEi26/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
+                        <object data="../media/Pabellon1/2. MAGDALENA EXTREM/MAGDALENA EXTREM Ficha financiera.pdf" type="application/pdf" width="100%" height="600px">
+                            No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/1iZENs6PURu5i8QKFlkfDi6TteLdtgmAi/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
                         </object>
                     </div>
                 </div>
@@ -76,8 +91,8 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <object data="media/Pabellon1/1. SAVON NATUREL/SAVON NATUREL Ficha Tecnica.pdf" type="application/pdf" width="100%" height="600px">
-                            No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/113VB6qJHMtLn0aaMS0TPiHI5qTZDSg50/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
+                        <object data="../media/Pabellon1/2. MAGDALENA EXTREM/MAGDALENA EXTREM Ficha Tecnica.pdf" type="application/pdf" width="100%" height="600px">
+                            No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/1_K-0WSn-NsZuJMy2DuNfl5lFHDPHcCl7/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
                         </object>
                     </div>
                 </div>
@@ -85,10 +100,10 @@
         </div>
 
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/venobox.min.js"></script>
-        <script src="js/myscripts.js"></script>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/venobox.min.js"></script>
+        <script src="../js/myscripts.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.venobox').venobox();
