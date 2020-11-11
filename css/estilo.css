@@ -187,11 +187,6 @@ html{
 }
 
 /* Ubicacion de los botones de los stand */
-.comercial{
-	top:26%;
-	left:35%;
-	animation: pulse 1.5s infinite;
-}
 .savon{
 	top:10%;
 	left:10%;
@@ -200,15 +195,44 @@ html{
 
 .magdalena{
 	top:10%;
-	left:20%;
+	left:15%;
 	animation: pulse 1.5s infinite;
 }
 .ecowater{
+	top:10%;
+	left:20%;
+	animation: pulse 1.5s infinite;
+}
+
+.ecotypiemo{
+	top:10%;
+	left:25%;
+	animation: pulse 1.5s infinite;
+}
+
+.nazhani{
 	top:10%;
 	left:30%;
 	animation: pulse 1.5s infinite;
 }
 
+.enyufit{
+	top:10%;
+	left:35%;
+	animation: pulse 1.5s infinite;
+}
+
+.lamparas{
+	top:10%;
+	left:40%;
+	animation: pulse 1.5s infinite;
+}
+
+.mural{
+	top:10%;
+	left:45%;
+	animation: pulse 1.5s infinite;
+}
 
 .imagens{
 	top:26%;
@@ -233,12 +257,6 @@ html{
   border-style: solid;
 	border-color: #f15a29;
 	/* animation: pulse 1.5s infinite; */
-}
-
-.stand{
-	top:67%;
-	left:65%;
-	animation: pulse 1.5s infinite;
 }
 
 .video{

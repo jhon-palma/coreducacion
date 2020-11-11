@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/venobox.css" media="screen">
+        <!-- <link rel="stylesheet" href="css/palma.css" media="screen"> -->
+        <style>
+            .html,body{
+                 /* Para que funcione correctamente en Smartphones y Tablets */
+                 height:100vh;
+            }
+
+            body {
+                background-image: url("../img/stand/Stand 4_Ecotypiemo.jpg")!important;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+        </style>
+        <title>CorEducación</title>
+    </head>
+    <body>
+        <div class="mainContent">
+            <div class="outer-loader">
+                <div class="inner-loader-img">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/orientacion.jpg" class="imgOrientation img-fluid" alt="gira tu dispositivo">
+            <div class="contenedor" style="display: none;">
+                <span class="pulse-button">
+                    <div class="back" onclick="newActivity('Regreso a Lobby')">
+                        <a href="../lobby.html">
+                            <img class="imageButtons atras" src="../img/arrow-left.svg" data-toggle="tooltip" data-placement="right" title=""/>
+                        </a>
+                    </div>
+                </span>
+                <span >
+                    <div class="back" onclick="newActivity('Regreso a Lobby')">
+                        <a href="../index.html">
+                            <img class="home" src="../img/home.svg" data-toggle="tooltip" data-placement="right" title=""/>
+                        </a>
+                    </div>
+                </span>
+                <span class="pulse-button">
+                    <a data-toggle="modal" data-target="#Modal1">
+                        <img class="imageButtons imagens" src="../img/ingreso1.svg"/>
+                    </a>
+                </span>
+                <span class="pulse-button">
+                    <a class="venobox-video" data-vbtype="video" href="https://youtu.be/LGjbh-RXmlA">
+                        <div class="loader loaderZona"></div>
+                        <img class="imageButtons video" src="../img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title="aaa"/>
+                    </a>
+                </span>
+                <span class="pulse-button">
+                    <a data-toggle="modal" data-target="#Modal2">
+                        <div class="loader loaderZona"></div>
+                        <img class="imageButtons encuesta" src="../img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <!-- <embed src="media/Pabellon1/1. SAVON NATUREL/SAVON NATUREL Ficha financiera.pdf" width="100%" height="500" style="height: 85vh;"></embed> -->
+                        <object data="../media/Pabellon1/4. ECOTOYPIEMO/ECOTOYPIEMO Ficha financiera.pdf" type="application/pdf" width="100%" height="600px">
+                            No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/1icAYkHav9WUErfYy2IakLTG5tALtOWrC/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <object data="../media/Pabellon1/4. ECOTOYPIEMO/ECOTOYPIEMO Ficha Tecnica.pdf" type="application/pdf" width="100%" height="600px">
+                            No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/1C6jDx5umXRBXwHZGHcRm5j9JAkq-LR9M/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/venobox.min.js"></script>
+        <script src="../js/myscripts.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.venobox').venobox();
+            });
+        </script>
+        <script>
+    		$(window).on('load', function () {
+                $('.outer-loader').delay(1000).fadeOut('slow', function(){
+        	        $('.contenedor').delay(1000).css('display', 'block');
+        	        var orientation=screen.orientation.type;
+        	        if(orientation=="portrait-primary"){
+                        $(".contenedor").css("display", "none");
+                        $(".imgOrientation").css("display", "block");
+        	        }else{
+        	           	$(".contenedor").css("display", "block");
+        	            $(".imgOrientation").css("display", "none");
+        	        }
+
+                    window.onorientationchange = function(){
+                        var orientation2=screen.orientation.type;
+                        if(orientation2=="portrait-primary"){
+                            $(".contenedor").css("display", "none");
+                            $(".imgOrientation").css("display", "block");
+                        }
+                        if(orientation2=="landscape-primary"){
+                            $(".contenedor").css("display", "block");
+                            $(".imgOrientation").css("display", "none");
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
