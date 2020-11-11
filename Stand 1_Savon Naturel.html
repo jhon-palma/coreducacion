@@ -12,7 +12,15 @@
     </head>
     <body>
         <div class="mainContent">
-            <div class="contenedor">
+            <div class="outer-loader">
+                <div class="inner-loader-img">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <img src="img/stand/orientacion.jpg" class="imgOrientation img-fluid" alt="gira tu dispositivo">
+            <div class="contenedor" style="display: none;">
                 <span class="pulse-button">
                     <div class="back" onclick="newActivity('Regreso a Lobby')">
                         <a href="lobby.html">
@@ -38,7 +46,7 @@
                         <img class="imageButtons video" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
                     </a>
                 </span>
-                <span class="pulse-button">
+                <span class="pulse-button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                     <a data-toggle="modal" data-target="#Modal2">
                         <div class="loader loaderZona"></div>
                         <img class="imageButtons encuesta" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
@@ -65,12 +73,9 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <!-- https://docs.google.com/viewerng/viewer?url=https://drive.google.com/file/d/1nElFB5QIH45QYJUh-dQl9Agvud-dEi26/view?usp=sharing -->
-
-                        <!-- <embed src="media/Pabellon1/1. SAVON NATUREL/SAVON NATUREL Ficha financiera.pdf" width="100%" height="500" style="height: 85vh;"></embed> -->
-                        <object data="media/Pabellon1/1. SAVON NATUREL/SAVON NATUREL Ficha financiera.pdf" type="application/pdf" width="100%" height="600px">
-                                No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/1nElFB5QIH45QYJUh-dQl9Agvud-dEi26/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
-                            </object>
+                        <object data="media/Pabellon1/1. SAVON NATUREL/SAVON NATUREL Ficha Tecnica.pdf" type="application/pdf" width="100%" height="600px">
+                            No tiene instalado el complemento para visualizar el documento en línea, descárguelo <a href="https://drive.google.com/file/d/113VB6qJHMtLn0aaMS0TPiHI5qTZDSg50/view?usp=sharing">aquí.</a> Para una mejor visualización use Google Chrome.
+                        </object>
                     </div>
                 </div>
             </div>
@@ -84,6 +89,33 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.venobox').venobox();
+            });
+        </script>
+        <script>
+    		$(window).on('load', function () {
+                $('.outer-loader').delay(1000).fadeOut('slow', function(){
+        	        $('.contenedor').delay(1000).css('display', 'block');
+        	        var orientation=screen.orientation.type;
+        	        if(orientation=="portrait-primary"){
+                        $(".contenedor").css("display", "none");
+                        $(".imgOrientation").css("display", "block");
+        	        }else{
+        	           	$(".contenedor").css("display", "block");
+        	            $(".imgOrientation").css("display", "none");
+        	        }
+
+                    window.onorientationchange = function(){
+                        var orientation2=screen.orientation.type;
+                        if(orientation2=="portrait-primary"){
+                            $(".contenedor").css("display", "none");
+                            $(".imgOrientation").css("display", "block");
+                        }
+                        if(orientation2=="landscape-primary"){
+                            $(".contenedor").css("display", "block");
+                            $(".imgOrientation").css("display", "none");
+                        }
+                    }
+                });
             });
         </script>
     </body>

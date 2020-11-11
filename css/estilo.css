@@ -49,6 +49,31 @@ html{
     border-color: #e77049;
 		box-shadow: 0 0 0 0.2rem rgba(242, 129, 91, 0);
 } */
+.imgOrientation{
+	display: none;
+}
+
+.outer-loader {
+      width: auto;
+      height: 100vh;
+      /*display: flex;*/
+      align-items: center;
+      justify-content: center;
+   /*   background-image: url('../media/expo/01-lobby.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;*/
+}
+
+.inner-loader-img {
+      position:absolute;
+      z-index: 1;
+      text-align: center;
+      align-items: center;
+      height: 30%;
+      width: 30%;
+      top:35%;
+      left:35%;
+}
 
 .button-container{
   /* display:inline-block; */
