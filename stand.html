@@ -13,14 +13,7 @@
     <title>CorEducación</title>
   </head>
   <body>
-    <!-- <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
-      </a>
-    </div>
-  </div> -->
+
   <div class="mainContent">
 
     <div class="contenedor">
@@ -33,9 +26,13 @@
 						<img class="imageButtons atras" src="img/arrow-left.svg" data-toggle="tooltip" data-placement="right" title=""/>
 					</a>
 				</div>
-
-
-
+      </span>
+      <span >
+        <div class="back" onclick="newActivity('Regreso a Lobby')">
+					<a href="index.html">
+						<img class="home" src="img/home.svg" data-toggle="tooltip" data-placement="right" title=""/>
+					</a>
+				</div>
       </span>
           <span class="pulse-button">
 
@@ -43,6 +40,7 @@
 
 					<img class="imageButtons imagens" src="img/ingreso1.svg"/>
 				</a>
+
       </span>
       <span class="pulse-button">
         <a class="venobox-video" data-vbtype="video" href="https://youtu.be/3xjtzkP6rI4">
@@ -74,6 +72,12 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="js/myscripts.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.venobox').venobox();
+});
+
+    </script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
