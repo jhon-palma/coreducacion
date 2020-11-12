@@ -78,7 +78,7 @@ html{
   .logo{
     /* display:inline-block; */
     position:absolute;
-  	top:75%;
+  	top:65%;
   	left:1%;
   	transform: translate(-50%;-50%);
   }
