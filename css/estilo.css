@@ -2,7 +2,7 @@ body{
 	height: 100%;
 	background-color: rgba(255,255,255,1);
 	margin: 0px;
-  padding: 0px;
+	padding: 0px;
 }
 html{
 	height: 100%;
@@ -230,6 +230,53 @@ html{
 
 .mural{
 	top:10%;
+	left:45%;
+	animation: pulse 1.5s infinite;
+}
+
+.madeplast{
+	top:20%;
+	left:10%;
+	animation: pulse 1.5s infinite;
+}
+
+.pad{
+	top:20%;
+	left:15%;
+	animation: pulse 1.5s infinite;
+}
+
+.all{
+	top:20%;
+	left:20%;
+	animation: pulse 1.5s infinite;
+}
+.yogaloe{
+	top:20%;
+	left:25%;
+	animation: pulse 1.5s infinite;
+}
+
+.anchetas{
+	top:20%;
+	left:30%;
+	animation: pulse 1.5s infinite;
+}
+
+.erv{
+	top:20%;
+	left:35%;
+	animation: pulse 1.5s infinite;
+}
+
+.ma{
+	top:20%;
+	left:40%;
+	animation: pulse 1.5s infinite;
+}
+
+.energy{
+	top:20%;
 	left:45%;
 	animation: pulse 1.5s infinite;
 }
