@@ -216,96 +216,96 @@ html{
 
 /* Ubicacion de los botones de los stand */
 .savon{
-	top:10%;
-	left:10%;
+	top:85%;
+	left:68%;
 	animation: pulse 1.5s infinite;
 }
 
 .magdalena{
-	top:10%;
-	left:15%;
+	top:85%;
+	left:87%;
 	animation: pulse 1.5s infinite;
 }
 .ecowater{
-	top:10%;
-	left:20%;
+	top:68%;
+	left:64%;
 	animation: pulse 1.5s infinite;
 }
 
 .ecotypiemo{
-	top:10%;
-	left:25%;
+	top:68%;
+	left:80%;
 	animation: pulse 1.5s infinite;
 }
 
 .nazhani{
-	top:10%;
+	top:85%;
 	left:30%;
 	animation: pulse 1.5s infinite;
 }
 
 .enyufit{
-	top:10%;
-	left:35%;
+	top:52%;
+	left:49%;
 	animation: pulse 1.5s infinite;
 }
 
 .lamparas{
-	top:10%;
-	left:40%;
+	top:52%;
+	left:37%;
 	animation: pulse 1.5s infinite;
 }
 
 .mural{
-	top:10%;
-	left:45%;
+	top:85%;
+	left:49%;
 	animation: pulse 1.5s infinite;
 }
 
 .madeplast{
-	top:20%;
-	left:10%;
+	top:66%;
+	left:49%;
 	animation: pulse 1.5s infinite;
 }
 
 .pad{
-	top:20%;
-	left:15%;
+	top:65%;
+	left:34%;
 	animation: pulse 1.5s infinite;
 }
 
 .all{
-	top:20%;
-	left:20%;
+	top:85%;
+	left:12%;
 	animation: pulse 1.5s infinite;
 }
 .yogaloe{
-	top:20%;
-	left:25%;
+	top:65%;
+	left:20%;
 	animation: pulse 1.5s infinite;
 }
 
 .anchetas{
-	top:20%;
-	left:30%;
+	top:54%;
+	left:75%;
 	animation: pulse 1.5s infinite;
 }
 
 .erv{
-	top:20%;
-	left:35%;
+	top:54%;
+	left:61%;
 	animation: pulse 1.5s infinite;
 }
 
 .ma{
-	top:20%;
-	left:40%;
+	top:52%;
+	left:25%;
 	animation: pulse 1.5s infinite;
 }
 
 .energy{
-	top:20%;
-	left:45%;
+	top:52%;
+	left:14%;
 	animation: pulse 1.5s infinite;
 }
 

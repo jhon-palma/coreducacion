@@ -6,12 +6,27 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" >
         <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/estilo.css">
+        <style>
+            .html,body{
+                 /* Para que funcione correctamente en Smartphones y Tablets */
+                 height:100vh;
+            }
+
+            body {
+                background-image: url("img/Render.jpg")!important;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+        </style>
         <title>CorEducación</title>
     </head>
   <body>
     <div class="mainContent">
         <div class="contenedor">
-            <img class="imagen img-fluid" src="img/fondo2.jpg" alt="" />
+            <!-- <img class="imagen img-fluid" src="img/fondo2.jpg" alt="" /> -->
             <span >
                 <div class="back" onclick="newActivity('Regreso a Lobby')">
                     <a href="index.html">
@@ -98,7 +113,7 @@
                 </a>
             </span>
             <span class="pulse-button">
-                <a href="pabellon/Stand 14_Anchetas DB.html" onclick="newActivity('Ingreso a Muestra Comercial')">
+                <a href="pabellon/Stand 14_ERV Nature.html" onclick="newActivity('Ingreso a Muestra Comercial')">
                 <div class="loader loaderZona"></div>
                     <img class="imageButtons erv" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
                 </a>
@@ -115,17 +130,6 @@
                     <img class="imageButtons energy" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
                 </a>
             </span>
-
-
-
-
-      <span class="pulse-button">
-        <a href="stand.html" onclick="newActivity('Ingreso a Muestra Comercial')">
-					<div class="loader loaderZona"></div>
-					<img class="imageButtons encuesta" src="img/ingreso1.svg" data-toggle="tooltip" data-placement="right" title=""/>
-				</a>
-      </span>
-
     </div>
   </div>
     <!-- Optional JavaScript; choose one of the two! -->
