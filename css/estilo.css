@@ -24,6 +24,9 @@ html{
 	transform: translate(-50%;-50%);
 }
 
+
+
+
 .boton{
   /* display:inline-block; */
   position:absolute;
@@ -42,8 +45,8 @@ html{
 }
 
 .caja{
-	top:40% !important;
-	left:35% !important;
+	top:40%;
+	left:35%;
 	position: absolute;
 	z-index: 1;
 }
@@ -62,14 +65,18 @@ html{
 	color: white;
 	text-shadow: 2px 2px 2px #e77049;
 }
-/* .btn-success:not(:disabled):not(.disabled):active:focus,{}  */
 
-/* .boton:not(:disabled):not(.disabled):active,.boton:focus{
-    color: #fff;
-    background-color: #f15a29;
-    border-color: #e77049;
-		box-shadow: 0 0 0 0.2rem rgba(242, 129, 91, 0);
-} */
+@media only screen and (max-width: 600px) {
+  .boton {
+	top:80%;
+	left:35%;
+  }
+  .caja {
+	top:35%;
+	left:15%;
+  }
+}
+
 .imgOrientation{
 	display: none;
 }
