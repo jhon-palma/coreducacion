@@ -55,26 +55,6 @@
             $(window).on('load', function () {
                 $('.outer-loader').delay(1000).fadeOut('slow', function(){
                     $('.contenedor').delay(1000).css('display', 'block');
-                    var orientation=screen.orientation.type;
-                    if(orientation=="portrait-primary"){
-                        $(".contenedor").css("display", "none");
-                        $(".imgOrientation").css("display", "block");
-                    }else{
-                        $(".contenedor").css("display", "block");
-                        $(".imgOrientation").css("display", "none");
-                    }
-
-                    window.onorientationchange = function(){
-                        var orientation2=screen.orientation.type;
-                        if(orientation2=="portrait-primary"){
-                            $(".contenedor").css("display", "none");
-                            $(".imgOrientation").css("display", "block");
-                        }
-                        if(orientation2=="landscape-primary"){
-                            $(".contenedor").css("display", "block");
-                            $(".imgOrientation").css("display", "none");
-                        }
-                    }
                 });
             });
         </script>
