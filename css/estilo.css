@@ -68,19 +68,29 @@ html{
   justify-content: center;
 }
 
+.cover, .imagen{
+	position: absolute;
+}
 
 .cover {
-  padding: 0 1.5rem;
+  	padding: 0 1.5rem;
+	/* z-index: 1; */
+	left:70%;
 }
+
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
 
+.btnc{
+	top:65%;
+	left:50%;
+}
 .muestra{
     margin-top: 4rem;
 }
- 
+
 .menu{
     margin-top: 4rem;
 }
