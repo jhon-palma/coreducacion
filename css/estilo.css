@@ -7,6 +7,9 @@ body{
 html{
 	height: 100%;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .contenedor .outer-loader{
     position: relative;
 		/* background: url(img/fondo2.jpg) no-repeat center ; */
@@ -367,6 +370,101 @@ html{
 	animation: pulse 1.5s infinite;
 }
 
+/* @media only screen and (max-width: 600px) {
+	.savon{
+		top:95%;
+		left:68%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.magdalena{
+		top:95%;
+		left:87%;
+		animation: pulse 1.5s infinite;
+	}
+	.ecowater{
+		top:68%;
+		left:64%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.ecotypiemo{
+		top:68%;
+		left:80%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.nazhani{
+		top:95%;
+		left:30%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.enyufit{
+		top:52%;
+		left:49%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.lamparas{
+		top:52%;
+		left:37%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.mural{
+		top:95%;
+		left:49%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.madeplast{
+		top:66%;
+		left:49%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.pad{
+		top:65%;
+		left:34%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.all{
+		top:95%;
+		left:12%;
+		animation: pulse 1.5s infinite;
+	}
+	.yogaloe{
+		top:65%;
+		left:20%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.anchetas{
+		top:54%;
+		left:75%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.erv{
+		top:54%;
+		left:61%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.ma{
+		top:52%;
+		left:25%;
+		animation: pulse 1.5s infinite;
+	}
+
+	.energy{
+		top:52%;
+		left:14%;
+		animation: pulse 1.5s infinite;
+	}
+} */
 .imagens{
 	top:26%;
 	left:35%;
