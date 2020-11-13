@@ -113,11 +113,27 @@ html{
   }
 
 }
+.kall{
+	padding-top: 20rem;
 
+}
+.portada{
+    text-align: center !important;
+}
+
+.contenedor{
+	position: absolute;
+	left:70%
+}
 @media only screen and (max-width: 767px) {
 	body {
 		background-image: url("../img/portada3.png") !important;
 	}
+	.contenedor{
+		position: absolute;
+		left:1%
+	}
+
 }
 .imgOrientation{
 	display: none;
