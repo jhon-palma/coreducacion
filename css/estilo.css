@@ -83,10 +83,10 @@ html{
   font-weight: 700;
 }
 
-.btnc{
+/* .btnc{
 	top:65%;
 	left:50%;
-}
+} */
 .muestra{
     margin-top: 4rem;
 }
@@ -111,8 +111,14 @@ html{
   	left:1%;
   	transform: translate(-50%;-50%);
   }
+
 }
 
+@media only screen and (max-width: 767px) {
+	body {
+		background-image: url("../img/portada3.png") !important;
+	}
+}
 .imgOrientation{
 	display: none;
 }
