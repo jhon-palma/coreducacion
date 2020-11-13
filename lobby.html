@@ -25,7 +25,15 @@
     </head>
   <body>
     <div class="mainContent">
-        <div class="contenedor">
+        <div class="outer-loader">
+            <div class="inner-loader-img">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <img src="img/orientacion.jpg" class="imgOrientation img-fluid" alt="gira tu dispositivo">
+        <div class="contenedor" style="display: none;">
             <!-- <img class="imagen img-fluid" src="img/fondo2.jpg" alt="" /> -->
             <span >
                 <div class="back" onclick="newActivity('Regreso a Lobby')">
@@ -134,9 +142,35 @@
   </div>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $('.outer-loader').delay(1000).fadeOut('slow', function(){
+                $('.contenedor').delay(1000).css('display', 'block');
+                var orientation=screen.orientation.type;
+                if(orientation=="portrait-primary"){
+                    $(".contenedor").css("display", "none");
+                    $(".imgOrientation").css("display", "block");
+                }else{
+                    $(".contenedor").css("display", "block");
+                    $(".imgOrientation").css("display", "none");
+                }
 
+                window.onorientationchange = function(){
+                    var orientation2=screen.orientation.type;
+                    if(orientation2=="portrait-primary"){
+                        $(".contenedor").css("display", "none");
+                        $(".imgOrientation").css("display", "block");
+                    }
+                    if(orientation2=="landscape-primary"){
+                        $(".contenedor").css("display", "block");
+                        $(".imgOrientation").css("display", "none");
+                    }
+                }
+            });
+        });
+    </script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
