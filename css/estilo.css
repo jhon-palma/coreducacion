@@ -24,9 +24,6 @@ html{
 	transform: translate(-50%;-50%);
 }
 
-
-
-
 .boton{
   /* display:inline-block; */
   position:absolute;
@@ -64,6 +61,28 @@ html{
 	line-height: 1.5rem;
 	color: white;
 	text-shadow: 2px 2px 2px #e77049;
+}
+
+.cover-container {
+  /*max-width: 42em; */
+  justify-content: center;
+}
+
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.muestra{
+    margin-top: 4rem;
+}
+ 
+.menu{
+    margin-top: 4rem;
 }
 
 @media only screen and (max-width: 600px) {
